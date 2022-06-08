@@ -1,0 +1,97 @@
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #2d2d2d;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 400px;
+  font-family: sans-serif;
+  color: aliceblue;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  border: 1px solid rgb(17, 8, 114);
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.63);
+}
+
+.text-wrapper {
+  width: 70%;
+  text-align: center;
+  flex-wrap: wrap;
+  line-height: 23px;
+}
+
+button {
+  margin-top: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.prev-btn,
+.next-btn {
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.connectBtn {
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 120px;
+  text-align: center;
+  background-color: #74c0fc;
+}
+
+.connectBtn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.connectBtn a {
+  text-decoration: none;
+  color: #25466c;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media screen {
+}
